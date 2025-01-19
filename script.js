@@ -56,3 +56,44 @@ for(let val of str) { //iterator -> characters
 }
 
 console.log("String size = ",size );
+
+//for in loop
+
+let student = {
+    name: "Rahul Kumar",
+    age: 20,
+    cgpa: 7.5,
+    isPass: true
+};
+
+for(let key  in student) {
+    console.log("key = ",key, "value = ", student[key]);
+}
+
+//Practice Qs1
+console.log("Practice Qs1")
+console.log("Even Numbers in 0 to 100")
+let s = 100;
+let count = 0;
+for(let m = 0; s >= m; m++) {
+    // console.log("m = ",m)
+    
+    if(m%2 === 0) { //even number        if(m%2 !== 0) { //odd number
+        
+        console.log("Numbers = ",m);
+        count++;
+    }
+};
+console.log("Tottal even numbers = ", count);
+
+//Qs2.
+//Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
+let gameNum = 25;
+
+let userNum = prompt("Guess the game number 22 25 51 : ");
+console.log(userNum);
+
+while(userNum != gameNum) { //game
+    userNum = prompt("You entered wrong number. Guess again : ");
+}
+console.log("congratulations, you entered the right number");
