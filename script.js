@@ -88,12 +88,57 @@ console.log("Tottal even numbers = ", count);
 
 //Qs2.
 //Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
-let gameNum = 25;
+// let gameNum = 25;
 
-let userNum = prompt("Guess the game number 22 25 51 : ");
-console.log(userNum);
+// let userNum = prompt("Guess the game number 22 25 51 : ");
+// console.log(userNum);
 
-while(userNum != gameNum) { //game
-    userNum = prompt("You entered wrong number. Guess again : ");
-}
-console.log("congratulations, you entered the right number");
+// while(userNum != gameNum) { //game
+//     userNum = prompt("You entered wrong number. Guess again : ");
+// }
+// console.log("congratulations, you entered the right number");
+
+// Strings in JS
+// String is a sequence of characters used to represent text
+let stri = "Hard work";
+let str2 = 'Hard work';
+console.log(stri[5]); // W
+
+
+// Template Literals
+let specialString = `Go Riht way`;
+console.log(specialString);
+
+
+
+let obj = {
+    item : "pen",
+    price : 10,
+};
+let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+console.log(output);
+
+// console.log("the cost of", obj.item, " is ", obj.price, "rupees");
+
+let sps = `This is a tamlate literal ${1 + 2 + 3}`;
+console.log(sps);
+
+//escape cracters
+// \n for next line in strings
+console.log("Hard\nWork\tand world be your's");
+
+//String Methods in JS
+//These are built-in functions to manipulate a string
+//str.toUpperCase()
+let up = "Hard Work";
+to = up.toUpperCase(); //or let upstr = str.toUpperCase();
+console.log(up);
+
+//str.toLowerCase()
+let lo = "Hard Work";
+lo = lo.toLowerCase(); //or let toup = str.toUpperCase();
+console.log(lo);
+
+//str.trim( ) remove whitespaces
+let md = "      work hard                  ";
+console.log(md.trim());
