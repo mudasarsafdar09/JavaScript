@@ -142,3 +142,44 @@ console.log(lo);
 //str.trim( ) remove whitespaces
 let md = "      work hard                  ";
 console.log(md.trim());
+
+//str.slice(start, end?) returns part of string
+let slice = "Hallo";
+console.log(slice.slice(0, 3));
+
+//str1.concat(str2) joins str2 with str1
+let str1 = "hard work ";
+let str22 = "result --> success" 
+//  let res = "I  am learning coding from apna college. " + str1 + str22;
+//  console.log(res);
+// let mds = "hallo" + 123;
+// console.log(mds);
+console.log(str1.concat(str22));
+
+//str.replace(searchVal, newVal)
+let replae = "Hard Work";
+let rep = "Hard sssss Hard Hard Hard";
+
+console.log(replae.replaceAll("Hard", "Work"));
+console.log(rep.replaceAll("Hard", "Work"));
+
+//str.charAt(idX)
+let ch = "iloveJS";
+// ch[0] = "S"; not possible. creat new string or use replace methode
+ch = ch.replace("i", "S")
+console.log(ch);
+console.log(ch.charAt(0));
+
+// let's Practice Qs1. prompt the user to enter thir full name. generate a username for them based on the input. start username with @, followed by their full name and ending with the fullname length
+
+//eg:user name = "shradhakhapra" , username should be "@shradhakhapra13"
+
+let fullName = prompt("Enter your full name: ");
+let cleanedName = fullName.replace(/\s+/g, '');
+let nameLength = cleanedName.length;
+let userName = "@" + cleanedName + nameLength;
+
+console.log("Genrated Username : ", userName);
+
+
+    //    Complet leacture CH-3
